@@ -1,0 +1,17 @@
+<p>
+  <strong>Name:</strong>
+  <%= user.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= user.email %>
+</p>
+
+<p>
+  <%= link_to 'Show', trip_user_path(user.trip, user) %>
+</p>
+
+<p>
+  <%= link_to 'Destroy', [user.trip, user], method: :delete, data: { confirm: 'Are you sure?' } %>
+</p>

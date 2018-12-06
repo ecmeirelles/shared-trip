@@ -1,0 +1,18 @@
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<h2>Expenses</h2>
+<%= render @user.expenses %>
+
+<h2>Add a expense:</h2>
+<%= render 'expenses/form' %>
+
+<%= link_to 'Edit', edit_trip_user_path(@user) %> |
+<%= link_to 'Back', trip_users_path %>

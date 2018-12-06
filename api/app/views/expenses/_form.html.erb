@@ -1,0 +1,13 @@
+<%= form_with(model: [ @trip, @user, @user.expenses.build ], local: true) do |form| %>
+  <p>
+    <%= form.label :description %><br>
+    <%= form.text_field :description %>
+  </p>
+  <p>
+    <%= form.label :price %><br>
+    <%= form.text_area :price %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

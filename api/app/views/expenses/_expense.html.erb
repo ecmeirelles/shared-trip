@@ -1,0 +1,13 @@
+<p>
+  <strong>Description:</strong>
+  <%= expense.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= expense.price %>
+</p>
+
+<p>
+  <%= link_to 'Destroy Expense', [expense.user.trip, expense.user, expense], method: :delete, data: { confirm: 'Are you sure?' } %>
+</p>
